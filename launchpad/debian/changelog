@@ -1,5 +1,5 @@
 exaile (<#VERSION#>) bionic; urgency=low
 
-  * First release on launchpad
+  * Initial release starting with Exaile 4.1.1
 
- -- js <exaile-users@googlegroups.com>  Thu, 23 Sep 2010 21:36:01 +0200
+ -- js <exaile-users@googlegroups.com>  <#TIMESTAMP#>
