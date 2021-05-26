@@ -14,6 +14,9 @@ export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
+cd ../exaile
+git checkout Quickbuttons_Plugin
+
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR/debian
 
@@ -25,8 +28,6 @@ cd $DESTDIR
 
 sed -i "s/<#VERSION#>/$VER_STRING/g" debian/changelog
 sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
-
-echo 'override_dh_installdocs:' >> debian/rules
 
 ## This happens on launchpad build server
 #dpkg-buildpackage

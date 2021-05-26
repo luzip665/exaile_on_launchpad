@@ -14,8 +14,8 @@ export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
-
-
+cd ../exaile
+git checkout $PKG_VERSION
 
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
