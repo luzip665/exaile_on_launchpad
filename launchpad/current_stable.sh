@@ -14,6 +14,9 @@ export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
+
+
+
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
 

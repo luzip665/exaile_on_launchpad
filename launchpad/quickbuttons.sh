@@ -2,7 +2,7 @@
 
 PKG_NAME="exaile-plugin-quickbuttons"
 PKG_VERSION="0.1"
-DEB_VERSION="0ubuntu4"
+DEB_VERSION="0ubuntu5"
 ARCH="all"
 
 TMP_DIR="/tmp/ex_build/"
