@@ -4,6 +4,7 @@ PKG_NAME="exaile"
 PKG_VERSION="4.1.1"
 DEB_VERSION="0ubuntu2"
 ARCH="all"
+PPA="ppa"
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
@@ -17,6 +18,7 @@ CHANGESFILE="${DESTDIR}.changes"
 cd ../exaile
 git checkout $PKG_VERSION
 
+cd -
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
 
@@ -36,4 +38,4 @@ sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
 dpkg-source -b .
 dpkg-genchanges > $CHANGESFILE
 debsign -k Launchpad $CHANGESFILE
-dput ppa:luzip665/exaile $CHANGESFILE
+dput ppa:luzip665/$PPA $CHANGESFILE

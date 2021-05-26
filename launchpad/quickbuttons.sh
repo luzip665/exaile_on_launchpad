@@ -2,8 +2,9 @@
 
 PKG_NAME="exaile-plugin-quickbuttons"
 PKG_VERSION="0.1"
-DEB_VERSION="0ubuntu5"
+DEB_VERSION="0ubuntu6"
 ARCH="all"
+PPA="ppa"
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
@@ -17,6 +18,7 @@ CHANGESFILE="${DESTDIR}.changes"
 cd ../exaile
 git checkout Quickbuttons_Plugin
 
+cd -
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR/debian
 
@@ -37,4 +39,4 @@ sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
 dpkg-source -b .
 dpkg-genchanges > $CHANGESFILE
 debsign -k Launchpad $CHANGESFILE
-dput ppa:luzip665/ppa $CHANGESFILE
+dput ppa:luzip665/$PPA $CHANGESFILE
