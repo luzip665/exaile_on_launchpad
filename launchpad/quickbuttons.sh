@@ -2,9 +2,10 @@
 
 PKG_NAME="exaile-plugin-quickbuttons"
 PKG_VERSION="0.1"
-DEB_VERSION="0ubuntu6"
+DEB_VERSION="0ubuntu1"
 ARCH="all"
 PPA="ppa"
+#PPA="exaile"
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
