@@ -1,5 +1,5 @@
 exaile-plugin-quickbuttons (<#VERSION#>) bionic; urgency=low
 
-  * Initial release starting with 0.1
+  * Bugfix: Default values are used incorrect
 
  -- js <exaile-users@googlegroups.com>  <#TIMESTAMP#>
