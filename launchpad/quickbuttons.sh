@@ -24,7 +24,6 @@ rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR/debian
 
 cp -r ../exaile/plugins/quickbuttons/* $DESTDIR
-
 cp -r plugin_quickbuttons/* $DESTDIR/debian
 
 cd $DESTDIR

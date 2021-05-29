@@ -5,6 +5,7 @@ PKG_VERSION="4.1.1"
 DEB_VERSION="0ubuntu2"
 ARCH="all"
 PPA="ppa"
+#PPA="exaile"
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
@@ -21,9 +22,10 @@ git checkout $PKG_VERSION
 cd -
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
+mkdir -p $DESTDIR/debian
 
 cp -r ../exaile/* $DESTDIR
-cp -r debian $DESTDIR
+cp -r current_stable/* $DESTDIR/debian
 
 cd $DESTDIR
 
