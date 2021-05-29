@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 PKG_NAME="exaile-plugin-quickbuttons"
-PKG_VERSION="0.1"
+PKG_VERSION="0.2"
 DEB_VERSION="0ubuntu1"
 ARCH="all"
 PPA="ppa"
