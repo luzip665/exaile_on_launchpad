@@ -1,5 +1,6 @@
 exaile-plugin-quickbuttons (<#VERSION#>) bionic; urgency=low
 
+  * Bugfix: Label changed: Delay in seconds
   * Bugfix: Default values are used incorrect
 
  -- js <exaile-users@googlegroups.com>  <#TIMESTAMP#>

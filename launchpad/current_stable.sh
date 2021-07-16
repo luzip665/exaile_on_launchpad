@@ -18,6 +18,7 @@ CHANGESFILE="${DESTDIR}.changes"
 
 cd ../exaile
 git checkout $PKG_VERSION
+git pull
 
 cd -
 rm -rf "${TMP_DIR}"
