@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
-PKG_NAME="exaile"
-PKG_VERSION="4.1.1+`date +%Y%m%d`"
+PKG_NAME="exaile-master-daily"
+PKG_VERSION="`date +%Y%m%d`"
 DEB_VERSION="0ubuntu1"
 ARCH="all"
 PPA="ppa"
@@ -26,12 +26,14 @@ mkdir -p $DESTDIR
 mkdir -p $DESTDIR/debian
 
 cp -r ../exaile/* $DESTDIR
-cp -r current_stable/* $DESTDIR/debian
+cp -r current_head/* $DESTDIR/debian
 
 cd $DESTDIR
 
 sed -i "s/<#VERSION#>/$VER_STRING/g" debian/changelog
 sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/control
 
 ## This happens on launchpad build server
 #dpkg-buildpackage

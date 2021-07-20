@@ -1,4 +1,4 @@
-exaile (<#VERSION#>) bionic; urgency=low
+<#PKG_NAME#> (<#VERSION#>) bionic; urgency=low
 
   * (almost) daily release of the current head
 
