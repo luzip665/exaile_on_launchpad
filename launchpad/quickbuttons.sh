@@ -2,7 +2,7 @@
 
 PKG_NAME="exaile-plugin-quickbuttons"
 PKG_VERSION="0.4"
-DEB_VERSION="0ubuntu1"
+DEB_VERSION="0ubuntu2"
 ARCH="all"
 #PPA="ppa"
 PPA="exaile"
