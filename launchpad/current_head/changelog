@@ -1,5 +1,6 @@
 <#PKG_NAME#> (<#VERSION#>) bionic; urgency=low
 
   * (almost) daily release of the current head
+  * Bugfix Unable to sort a playlist with rating value
 
  -- js <exaile-users@googlegroups.com>  <#TIMESTAMP#>
