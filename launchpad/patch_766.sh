@@ -1,11 +1,11 @@
 #!/bin/bash -x
 
-PKG_NAME="exaile-plugin-quickbuttons"
-PKG_VERSION="0.4"
-DEB_VERSION="1ubuntu1"
+PKG_NAME="exaile-patch-766"
+PKG_VERSION="`date +%Y%m%d`"
+DEB_VERSION="0ubuntu6"
 ARCH="all"
-#PPA="ppa"
-PPA="exaile"
+PPA="ppa"
+#PPA="exaile"
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
@@ -17,20 +17,24 @@ export DESTDIR=$TMP_DIR$PKG_DIR
 CHANGESFILE="${DESTDIR}.changes"
 
 cd ../exaile
-git checkout Quickbuttons_Plugin
+git checkout bugfix_autoscrolltreeview
 git pull
 
 cd -
 rm -rf "${TMP_DIR}"
+mkdir -p $DESTDIR
 mkdir -p $DESTDIR/debian
 
-cp -r ../exaile/plugins/quickbuttons/* $DESTDIR
-cp -r plugin_quickbuttons/* $DESTDIR/debian
+cp -r ../exaile/xlgui/widgets/common.py $DESTDIR
+cp -r ../exaile/xlgui/widgets/playlist.py $DESTDIR
+cp -r patch_766/* $DESTDIR/debian
 
 cd $DESTDIR
 
 sed -i "s/<#VERSION#>/$VER_STRING/g" debian/changelog
 sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/control
 
 ## This happens on launchpad build server
 #dpkg-buildpackage

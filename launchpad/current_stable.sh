@@ -2,7 +2,7 @@
 
 PKG_NAME="exaile"
 PKG_VERSION="4.1.1"
-DEB_VERSION="0ubuntu2"
+DEB_VERSION="0ubuntu40"
 ARCH="all"
 PPA="ppa"
 #PPA="exaile"
