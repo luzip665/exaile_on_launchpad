@@ -2,7 +2,7 @@
 
 PKG_NAME="exaile-patch-766"
 PKG_VERSION="`date +%Y%m%d`"
-DEB_VERSION="0ubuntu6"
+DEB_VERSION="0ubuntu1"
 ARCH="all"
 PPA="ppa"
 #PPA="exaile"
