@@ -1,8 +1,8 @@
 #!/bin/bash -x
 
 PKG_NAME="exaile-plugin-quickbuttons"
-PKG_VERSION="0.4"
-DEB_VERSION="1ubuntu4"
+PKG_VERSION="0.5"
+DEB_VERSION="0ubuntu1"
 ARCH="all"
 #PPA="ppa"
 PPA="exaile"
@@ -17,8 +17,8 @@ export DESTDIR=$TMP_DIR$PKG_DIR
 CHANGESFILE="${DESTDIR}.changes"
 
 cd ../exaile
-#git checkout Quickbuttons_Plugin
-#git pull
+git checkout quickbuttons_audio_sink
+git pull
 
 cd -
 rm -rf "${TMP_DIR}"
