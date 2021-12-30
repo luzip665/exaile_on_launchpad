@@ -8,5 +8,5 @@ Homepage: https://exaile.org
 
 Package: exaile-plugin-quickbuttons
 Architecture: all
-Depends: exaile (>=4.1.1) | exaile-master-daily (<20211213)
+Depends: exaile (>=4.1.1) | exaile-master-daily (>20211213)
 Description: Plug In to get quick settings buttons on bottom line

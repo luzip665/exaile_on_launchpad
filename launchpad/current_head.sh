@@ -8,12 +8,13 @@ upload() {
   PKG_VERSION="`date +%Y%m%d`"
   DEB_VERSION="0ubuntu1"
   ARCH="all"
-  PPA="ppa"
-#  PPA="exaile"
+#  PPA="ppa"
+  PPA="exaile"
 
   TMP_DIR="/tmp/ex_build/"
-  PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}_${UBUNTU_RELEASE}"
   VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
+  PKG_DIR="${PKG_NAME}_${VER_STRING}_${ARCH}"
+#  PKG_DIR="${PKG_NAME}_${VER_STRING}_${ARCH}_${UBUNTU_RELEASE}"
   TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
 
   export DESTDIR=$TMP_DIR$PKG_DIR
