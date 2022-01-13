@@ -4,7 +4,8 @@ upload() {
 
   UBUNTU_RELEASE="$1"
 
-  PKG_NAME="exaile-master-daily-${UBUNTU_RELEASE}"
+  PKG_NAME="exaile-master-daily"
+#  PKG_NAME="exaile-master-daily-${UBUNTU_RELEASE}"
   PKG_VERSION="`date +%Y%m%d`"
   DEB_VERSION="0ubuntu1"
   ARCH="all"
