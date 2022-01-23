@@ -9,13 +9,13 @@ upload() {
   PKG_VERSION="`date +%Y%m%d`"
   DEB_VERSION="0ubuntu1"
   ARCH="all"
-#  PPA="ppa"
-  PPA="exaile"
+#  PPA="ppa:luzip665/ppa" # Testing
+  PPA="ppa:luzip665/exaile" # inofficial
+#  PPA="ppa:exaile-devel/exaile" # official
 
   TMP_DIR="/tmp/ex_build/"
-  VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
+  VER_STRING="${PKG_VERSION}-${DEB_VERSION}~${UBUNTU_RELEASE}"
   PKG_DIR="${PKG_NAME}_${VER_STRING}_${ARCH}"
-#  PKG_DIR="${PKG_NAME}_${VER_STRING}_${ARCH}_${UBUNTU_RELEASE}"
   TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
 
   export DESTDIR=$TMP_DIR$PKG_DIR
@@ -44,7 +44,7 @@ upload() {
   dpkg-source -b .
   dpkg-genchanges > $CHANGESFILE
   debsign -k Launchpad $CHANGESFILE
-  dput ppa:luzip665/$PPA $CHANGESFILE
+  dput $PPA $CHANGESFILE
 
   cd -
 }
@@ -56,4 +56,7 @@ git pull
 cd -
 
 upload "bionic"
-#upload "focal"
+upload "focal"
+upload "hirsute"
+upload "impish"
+upload "jammy"
