@@ -11,7 +11,6 @@ upload() {
   ARCH="all"
 #  PPA="ppa:luzip665/ppa" # Testing
   PPA="ppa:luzip665/exaile" # inofficial
-#  PPA="ppa:exaile-devel/exaile" # official
 
   TMP_DIR="/tmp/ex_build/"
   VER_STRING="${PKG_VERSION}-${DEB_VERSION}~${UBUNTU_RELEASE}"
@@ -57,6 +56,5 @@ cd -
 
 upload "bionic"
 upload "focal"
-upload "hirsute"
 upload "impish"
 upload "jammy"
