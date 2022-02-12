@@ -1,0 +1,3 @@
+[submodule "exaile"]
+	path = exaile
+	url = https://github.com/exaile/exaile.git
