@@ -1,4 +1,0 @@
-[submodule "exaile"]
-	path = exaile
-	url = https://github.com/luzip665/exaile.git
-	branch = master
