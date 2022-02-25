@@ -1,8 +1,8 @@
 #!/bin/bash -x
 
 PKG_NAME="exaile"
-PKG_VERSION="4.1.1"
-DEB_VERSION="1ubuntu0"
+PKG_VERSION="4.1.2-beta1"
+DEB_VERSION="0ubuntu0"
 ARCH="all"
 #PPA="ppa:luzip665/ppa" # Testing
 #PPA="ppa:luzip665/exaile" # inofficial
