@@ -3,11 +3,9 @@
 PKG_NAME="exaile"
 EXAILE_VERSION="4.1.2-beta1"
 PKG_VERSION="4.1.2~beta1"
-DEB_VERSION="0ubuntu0"
+DEB_VERSION="0"
 ARCH="all"
-#PPA="ppa:luzip665/ppa" # Testing
-#PPA="ppa:luzip665/exaile" # inofficial
-PPA="ppa:exaile-devel/ppa" # official
+PPA="mentors" # official
 
 TMP_DIR="/tmp/ex_build/"
 PKG_DIR="${PKG_NAME}_${PKG_VERSION}-${DEB_VERSION}_${ARCH}"
@@ -45,5 +43,5 @@ sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" xl/version
 
 dpkg-source -b .
 dpkg-genchanges > $CHANGESFILE
-debsign -k Launchpad $CHANGESFILE
+debsign -k exaile $CHANGESFILE
 dput $PPA $CHANGESFILE
