@@ -42,7 +42,7 @@ upload() {
 
   dpkg-source -b .
   dpkg-genchanges > $CHANGESFILE
-  debsign -k Launchpad $CHANGESFILE
+  debsign -k exaile $CHANGESFILE
   dput $PPA $CHANGESFILE
 
   cd -
@@ -58,3 +58,4 @@ upload "bionic"
 upload "focal"
 upload "impish"
 upload "jammy"
+upload "kinetic"

@@ -1,0 +1,4 @@
+version=4
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
+  https://github.com/exaile/exaile/tags .*/?(\d\.\d.\d-\S*)\.tar\.gz
+#https://github.com/exaile/exaile/releases/download/4.1.2-beta1/exaile-4.1.2-beta1.tar.gz
