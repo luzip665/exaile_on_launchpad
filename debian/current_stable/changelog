@@ -1,5 +1,31 @@
 exaile (<#VERSION#>) unstable; urgency=low
 
   * Beta release for Exaile 4.1.2
+  * Closes: #466241
+  * Closes: #468205
+  * Closes: #471124
+  * Closes: #480989
+  * Closes: #498524
+  * Closes: #502594
+  * Closes: #504576
+  * Closes: #506154
+  * Closes: #506169
+  * Closes: #554143
+  * Closes: #561519
+  * Closes: #561567
+  * Closes: #578138
+  * Closes: #589971
+  * Closes: #594926
+  * Closes: #596905
+  * Closes: #604547
+  * Closes: #622994
+  * Closes: #660791
+  * Closes: #672574
+  * Closes: #668900
+  * Closes: #706983
+  * Closes: #726559
+  * Closes: #784758
+  * Closes: #785897
+  * Closes: #1012202
 
  -- exaile <exaile-devel@googlegroups.com>  <#TIMESTAMP#>

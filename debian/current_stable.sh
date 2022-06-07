@@ -2,7 +2,7 @@
 
 PKG_NAME="exaile"
 EXAILE_VERSION="4.1.2-beta1"
-PKG_VERSION="4.1.2-beta1"
+PKG_VERSION="4.1.2~beta1"
 DEB_VERSION="1"
 ARCH="all"
 PPA="mentors" # official
@@ -26,7 +26,7 @@ mkdir -p $DESTDIR
 mkdir -p $DESTDIR/debian
 
 #cp -r ../exaile/* $DESTDIR
-cp -r "exaile_4.1.2-beta1.orig.tar.gz" $TMP_DIR
+cp -r "exaile_4.1.2~beta1.orig.tar.gz" $TMP_DIR
 cp -r current_stable/* $DESTDIR/debian
 
 cd $DESTDIR
