@@ -7,6 +7,7 @@
 
 override_dh_auto_install:
 	dh_auto_install -- PREFIX=/usr
-
+#override_dh_installdocs:
+#	dh_installdocs readme
 override_dh_usrlocal:
 override_dh_auto_test:

@@ -1,5 +1,5 @@
 exaile (<#VERSION#>) unstable; urgency=low
 
-  * Beta release for Exaile 4.1.2 (Closes: #785897, #726559, #672574)
+  * Beta release for Exaile 4.1.2 (Closes: #785897)
 
  -- exaile <exaile-devel@googlegroups.com>  <#TIMESTAMP#>
