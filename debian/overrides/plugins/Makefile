@@ -43,5 +43,5 @@ uninstall:
 	rm -rf ${DESTDIR}${PREFIX}${PLUGINSDIR}*
 
 clean:
-	find . -name "__pycache__" -exec rm -f {} \;
+	find . -name "__pycache__" -exec rm -rf {} \;
 
