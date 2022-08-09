@@ -1,3 +1,6 @@
 [submodule "exaile"]
 	path = exaile
 	url = https://github.com/exaile/exaile.git
+[submodule "exaile_lp"]
+	path = exaile_lp
+	url = https://github.com/luzip665/exaile.git

@@ -2,26 +2,27 @@
 set -x
 
 PKG_NAME="exaile"
-EXAILE_VERSION="4.1.2-beta1"
-PKG_VERSION="4.1.2~beta1"
+EXAILE_VERSION="4.1.2"
+PKG_VERSION="4.1.2"
 DEB_VERSION="1"
 ARCH="all"
 PPA="mentors" # official
 
-
+CURR_DIR=$PWD
 TMP_DIR="/tmp/ex_build/"
+TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
-TAR_FILE="exaile_4.1.2~beta1.orig.tar.gz"
+TAR_FILE="exaile_4.1.2.orig.tar.gz"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
 cd ../exaile
-git checkout $EXAILE_VERSION
-#git checkout debian_packaging
+#git checkout $EXAILE_VERSION
+git checkout master
 git pull
 
 cd -
@@ -29,13 +30,13 @@ rm -rf "${TMP_DIR}"
 
 mkdir -p $DESTDIR
 cp -r ../exaile/* $DESTDIR
-cp -r overrides/* $DESTDIR
+#cp -r overrides/* $DESTDIR
 
 #Set version in exaile
 sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" $DESTDIR/xl/version.py
 
 cd $TMP_DIR
-tar zcf $TMP_DIR/$TAR_FILE $PKG_DIR
+tar zcf $TAR_FILE $PKG_DIR
 
 cd -
 
