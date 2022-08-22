@@ -9,27 +9,29 @@ ARCH="all"
 PPA="mentors" # official
 
 CURR_DIR=$PWD
-TMP_DIR="/tmp/ex_build/"
+#TMP_DIR="/tmp/ex_build/"
 TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
-TAR_FILE="exaile_4.1.2.orig.tar.gz"
+TAR_FILE="exaile_4.1.2.tar.gz"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
-cd ../exaile
+#cd ../exaile
 #git checkout $EXAILE_VERSION
-git checkout master
-git pull
+#git checkout master
+#git pull
 
-cd -
+#cd -
 rm -rf "${TMP_DIR}"
 
 mkdir -p $DESTDIR
-cp -r ../exaile/* $DESTDIR
+#cp -r ../exaile/* $DESTDIR
+
+cp -r "exaile_4.1.2.tar.gz" $TMP_DIR
 #cp -r overrides/* $DESTDIR
 
 #Set version in exaile
@@ -50,7 +52,7 @@ cd $DESTDIR
 
 ## This happens on launchpad build server
 dpkg-buildpackage -us -uc
-#exit
+exit
 ##
 
 #dpkg-source -b .
