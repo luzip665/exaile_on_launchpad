@@ -40,12 +40,11 @@ cd $DESTDIR
 
 ## This happens on launchpad build server
 dpkg-buildpackage -us -uc
-#lintian ../exaile_4.1.2-1_amd64.changes
-#exit
-##
-
-#dpkg-source -b .
 dpkg-genchanges > $CHANGESFILE
+
+lintian ../exaile-4.1.2.changes
+exit
+
 debsign -k exaile $CHANGESFILE
 dput $PPA $CHANGESFILE
 
