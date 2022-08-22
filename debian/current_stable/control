@@ -3,7 +3,7 @@ Section: sound
 Priority: optional
 Maintainer: exaile <exaile-devel@googlegroups.com>
 Uploaders: luzip665 <luzip665@posteo.de>
-Build-Depends: debhelper-compat (= 12), python3 (>= 3.6), python3-sphinx (>= 1.6), python3-gi-cairo (>=3.26), help2man
+Build-Depends: debhelper-compat (= 13), python3 (>= 3.6), python3-sphinx (>= 1.6), python3-gi-cairo (>=3.26), help2man
 Standards-Version: 4.6.1.0
 Homepage: https://exaile.org
 
