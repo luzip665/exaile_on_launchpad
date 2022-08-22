@@ -14,7 +14,7 @@ TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
-TAR_FILE="exaile_4.1.2.tar.gz"
+TAR_FILE="exaile_4.1.2.orig.tar.gz"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
@@ -31,15 +31,14 @@ rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
 #cp -r ../exaile/* $DESTDIR
 
-cp -r "exaile_4.1.2.tar.gz" $TMP_DIR
+cp -r "$TAR_FILE" $TMP_DIR
 #cp -r overrides/* $DESTDIR
 
 #Set version in exaile
-sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" $DESTDIR/xl/version.py
+#sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" $DESTDIR/xl/version.py
 
 cd $TMP_DIR
-tar zcf $TAR_FILE $PKG_DIR
-
+tar zxf $TAR_FILE
 cd -
 
 mkdir -p $DESTDIR/debian
@@ -52,10 +51,12 @@ cd $DESTDIR
 
 ## This happens on launchpad build server
 dpkg-buildpackage -us -uc
-exit
+#lintian ../exaile_4.1.2-1_amd64.changes
+#exit
 ##
 
 #dpkg-source -b .
 dpkg-genchanges > $CHANGESFILE
 debsign -k exaile $CHANGESFILE
 dput $PPA $CHANGESFILE
+
