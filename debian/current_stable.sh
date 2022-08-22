@@ -9,33 +9,22 @@ ARCH="all"
 PPA="mentors" # official
 
 CURR_DIR=$PWD
-#TMP_DIR="/tmp/ex_build/"
 TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
 TAR_FILE="exaile_4.1.2.orig.tar.gz"
+TAR_LINK="https://github.com/exaile/exaile/releases/download/4.1.2/exaile-4.1.2.tar.gz"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
 CHANGESFILE="${DESTDIR}.changes"
 
-#cd ../exaile
-#git checkout $EXAILE_VERSION
-#git checkout master
-#git pull
-
-#cd -
 rm -rf "${TMP_DIR}"
-
 mkdir -p $DESTDIR
-#cp -r ../exaile/* $DESTDIR
 
 cp -r "$TAR_FILE" $TMP_DIR
-#cp -r overrides/* $DESTDIR
-
-#Set version in exaile
-#sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" $DESTDIR/xl/version.py
+wget $TAR_LINK -O $TMP_DIR$TAR_FILE
 
 cd $TMP_DIR
 tar zxf $TAR_FILE
