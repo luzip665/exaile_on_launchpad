@@ -42,7 +42,7 @@ cd $DESTDIR
 dpkg-buildpackage -us -uc
 dpkg-genchanges > $CHANGESFILE
 
-lintian ../exaile-4.1.2.changes
+lintian -IE --pedantic ../exaile-4.1.2.changes
 exit
 
 debsign -k exaile $CHANGESFILE
