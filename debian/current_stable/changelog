@@ -1,5 +1,5 @@
 exaile (<#VERSION#>) unstable; urgency=low
 
-  * Reintroduce package (Closes: #785897)
+  * Reintroduce package (Closes: #785897, #1012202)
 
  -- luzip665 <luzip665@posteo.de>  <#TIMESTAMP#>

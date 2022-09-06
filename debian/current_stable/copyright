@@ -15,6 +15,10 @@ Files: plugins/playlistanalyzer/ext/*
 Copyright: 2010-2014, Michael Bostock
 License: BSD-3-Clause
 
+Files: debian/missing-sources/d3.js
+Copyright: 2010-2014, Michael Bostock
+License: BSD-3-Clause
+
 Files: debian/*
 Copyright: 2022 <luzip665@posteo.de>
 License: GPL-2.0+
