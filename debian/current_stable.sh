@@ -30,9 +30,10 @@ sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" $DESTDIR/debian/changelog
 
 cd $TMP_DIR
 uscan --force-download
-tar vxf $TAR_FILE
 
+tar xf $TAR_FILE
 cd $PKG_DIR
+rm exaile-4.1.2.tar.gz
 
 ## This happens on launchpad build server
 dpkg-buildpackage -us -uc
