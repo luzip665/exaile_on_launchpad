@@ -1,6 +1,8 @@
 version=4
 opts=\
+searchmode=plain,\
 repacksuffix=+dfsg,\
-dversionmangle=s/\+dfsg-\d+$//,\
-filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
-  https://github.com/exaile/exaile/tags .*/?(\d\.\d.\d*)\.tar\.gz
+dversionmangle=s/\+dfsg(-\d+)*$//,\
+filenamemangle=s/.+\/(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
+https://api.github.com/repos/exaile/exaile/releases \
+https://github.com/exaile/exaile/releases/download/\d\.\d\.\d\/exaile-(\d\.\d\.\d)\.tar\.gz
