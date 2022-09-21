@@ -1,3 +1,6 @@
 version=4
-opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
+opts=\
+repacksuffix=+dfsg,\
+dversionmangle=s/\+dfsg-\d+$//,\
+filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
   https://github.com/exaile/exaile/tags .*/?(\d\.\d.\d*)\.tar\.gz

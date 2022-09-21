@@ -2,6 +2,8 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: exaile
 Upstream-Contact: exaile <exaile-devel@googlegroups.com>
 Source: https://github.com/exaile/exaile
+Files-Excluded: tests/*
+Comment: non-free licence
 
 Files: *
 Copyright: 2022 exaile-devel@googlegroups.com
