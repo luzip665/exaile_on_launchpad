@@ -7,7 +7,7 @@ Comment: non-free license
 
 Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
-License: GPL-2.0+
+License: GPL-2.0+extended
 
 Files: plugins/abrepeat/*
 Copyright: 2010 Mathias Brodala <info@noctus.net>
