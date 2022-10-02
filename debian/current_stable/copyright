@@ -37,11 +37,11 @@ License: GPL-2.0+
 
 Files: plugins/bpm/*
 Copyright: 2011 Dustin Spicuzza <dustin@virtualroadside.com>
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/cd/*
 Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/console/*
 Copyright: 2007 Johannes Sasongko <sasongko@gmail.com>
@@ -73,20 +73,20 @@ License: GPL-2.0+
 
 Files: plugins/equalizer/*
 Copyright: 2009 Dave Aitken
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/grouptagger/*
 Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/helloworld/*
 Copyright: 2009-2010 Adam Olsen
            2014 Dustin Spicuzza
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/history/*
 Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/icecast/*
 Copyright: 2014 Ingo Brunberg
@@ -106,7 +106,7 @@ License: BSD-3-clause
 
 Files: plugins/jamendo/*
 Copyright: 2009 Erin Drummond
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/karaoke/*
 Copyright: 2009 Johannes Sasongko
@@ -122,7 +122,7 @@ License: GPL-2.0+
 
 Files: plugins/lastfmdynamic/*
 Copyright: 2009 Aren Olsen
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/lastfmlove/*
 Copyright: 2011 Mathias Brodala
@@ -146,7 +146,7 @@ License: GPL-2.0+
 
 Files: plugins/massstorage/*
 Copyright: 2009 Aren Olson
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/minimode/*
 Copyright: 2009 Mathias Brodala
@@ -154,7 +154,7 @@ License: GPL-2.0+
 
 Files: plugins/mono/*
 Copyright: 2013 Johannes Sasongko
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/moodbar/*
 Copyright: 2015 Johannes Sasongko
@@ -162,7 +162,7 @@ License: GPL-2.0+
 
 Files: plugins/mpris2/*
 Copyright: 2015 Johannes Sasongko
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/multialarmclock/*
 Copyright: 2006 Adam Olsen <arolsen@gmail.com>
@@ -184,7 +184,7 @@ License: GPL-2.0+
 
 Files: plugins/playlistanalyzer/*
 Copyright: 2014 Dustin Spicuzza
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/playlistanalyzer/ext/*
 Copyright: 2010-2014, Michael Bostock
@@ -196,7 +196,7 @@ License: GPL-2.0+
 
 Files: plugins/previewdevice/*
 Copyright: 2012 Dustin Spicuzza
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/quickbuttons/*
 Copyright: 2021 luzip665
@@ -204,11 +204,11 @@ License: GPL-2.0+
 
 Files: plugins/replaygain/*
 Copyright: 2009 Adam Olson
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/screensaverpause/*
 Copyright: 2009 Johannes Sasongko
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
 
 Files: plugins/shutdown/*
 Copyright: 2010 Johannes Schwartz
@@ -231,6 +231,10 @@ Files: plugins/winmmkeys/*
 Copyright: 2007 Johannes Sasongko
 License: GPL-2.0+
 
+Files: data/exaile.appdata.xml
+Copyright: 2014 Dustin Spicuzza
+License: CC0-1.0
+
 Files: debian/*
 Copyright: 2022 <luzip665@posteo.de>
 License: GPL-2.0+
@@ -251,7 +255,7 @@ License: GPL-2.0+
 License: GPL-3.0+
  Reference: /usr/share/common-licenses/GPL-3
 
-License: GPL-2.0+ extended
+License: GPL-2.0+extended
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 2 of the License, or
