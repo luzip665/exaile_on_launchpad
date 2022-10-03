@@ -9,6 +9,66 @@ Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
+Files: plugins/audioscrobbler/*, plugins/streamripper/*
+Copyright: 2006, 2008 Adam Olsen <arolsen@gmail.com>
+License: GPL-1.0+
+
+Files: plugins/podcasts/*
+Copyright: 2009 Adam Olsen
+License: GPL-2.0+
+
+Files: plugins/grouptagger/*, plugins/history/*, plugins/bpm/*, plugins/previewdevice/*, plugins/playlistanalyzer/*
+Copyright: 2011, 2012, 2014 Dustin Spicuzza
+License: GPL-2.0+ with gstreamer exception
+
+Files: plugins/developer/*
+Copyright: 2017 Dustin Spicuzza
+License: GPL-2.0+
+
+Files: data/exaile.appdata.xml
+Copyright: 2014 Dustin Spicuzza
+License: CC0-1.0
+
+Files: plugins/bookmarks/*, plugins/ipconsole/*
+Copyright: 2009-2010 Brian Parma <execrable@gmail.com>
+License: GPL-2.0+
+
+Files: plugins/console/*, plugins/winmmkeys/*, plugins/karaoke/*, plugins/keybinder/*, plugins/moodbar/*
+Copyright: 2007, 2009, 2015 Johannes Sasongko <sasongko@gmail.com>
+License: GPL-2.0+
+
+Files: plugins/mono/*, plugins/mpris2/*, plugins/screensaverpause/*
+Copyright: 2009, 2013, 2015 Johannes Sasongko
+License: GPL-2.0+ with gstreamer exception
+
+Files: plugins/cd/*, plugins/lastfmcovers/*, plugins/lastfmdynamic/*, plugins/massstorage/*
+Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
+License: GPL-2.0+ with gstreamer exception
+
+Files: plugins/lyricwiki/*
+Copyright: 2008 Aren Olson
+License: GPL-2.0+
+
+Files: plugins/lastfmlove/*, plugins/mainmenubutton/*, plugins/musicbrainzcovers/*, plugins/osd/*, plugins/wikipedia/*, plugins/minimode/*
+Copyright: 2009, 2011, 2012 Mathias Brodala
+License: GPL-2.0+
+
+Files: plugins/lyricsmania/*, plugins/somafm/*
+Copyright: 2010, 2014 Rocco Aliberti
+License: GPL-2.0+
+
+Files: plugins/equalizer/*
+Copyright: 2009 Dave Aitken
+License: GPL-2.0+ with gstreamer exception
+
+Files: plugins/icecast/*
+Copyright: 2014 Ingo Brunberg
+License: GPL-2.0+
+
+Files: plugins/inhibitsuspend/*
+Copyright: 2012 Ciaran Liedeman
+License: GPL-2.0+
+
 Files: plugins/abrepeat/*
 Copyright: 2010 Mathias Brodala <info@noctus.net>
            2012 Dustin Spicuzza <dustin@virtualroadside.com>
@@ -27,29 +87,9 @@ Copyright: 2008 Adam Olsen <arolsen@gmail.com>
            2009 Mathias Brodala <info@noctus.net>
 License: GPL-1.0+
 
-Files: plugins/audioscrobbler/*
-Copyright: 2008 Adam Olsen <arolsen@gmail.com>
-License: GPL-1.0+
-
-Files: plugins/bookmarks/*
-Copyright: 2009-2010 Brian Parma <execrable@gmail.com>
-License: GPL-2.0+
-
-Files: plugins/bpm/*
-Copyright: 2011 Dustin Spicuzza <dustin@virtualroadside.com>
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/cd/*
-Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/console/*
-Copyright: 2007 Johannes Sasongko <sasongko@gmail.com>
-License: GPL-2.0+
-
 Files: plugins/daapclient/*
 Copyright: 2006 Adam Olsen <arolsen@gmail.com>
-           2011 Brain Parma
+           2011 Brian Parma
            2020 Rok Mandeljc
 License: GPL-2.0+
 
@@ -63,38 +103,10 @@ Copyright: 2006-2010 Johannes Sasongko
            2010 Mathias Brodala
 License: GPL-2.0+
 
-Files: plugins/developer/*
-Copyright: 2017 Dustin Spicuzza
-License: GPL-2.0+
-
-Files: plugins/equalizer/*
-Copyright: 2009 Dave Aitken
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/grouptagger/*
-Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+ with gstreamer exception
-
 Files: plugins/helloworld/*
 Copyright: 2009-2010 Adam Olsen
            2014 Dustin Spicuzza
 License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/history/*
-Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/icecast/*
-Copyright: 2014 Ingo Brunberg
-License: GPL-2.0+
-
-Files: plugins/inhibitsuspend/*
-Copyright: 2012 Ciaran Liedeman
-License: GPL-2.0+
-
-Files: plugins/ipconsole/*
-Copyright: 2009 Brian Parma <execrable@gmail.com>
-License: GPL-2.0+
 
 Files: plugins/ipconsole/ipython_view.py
 Copyright: 2007 IBM Corporation
@@ -104,128 +116,32 @@ Files: plugins/jamendo/*
 Copyright: 2009 Erin Drummond
 License: GPL-2.0+ with gstreamer exception
 
-Files: plugins/karaoke/*
-Copyright: 2009 Johannes Sasongko
-License: GPL-2.0+
-
-Files: plugins/keybinder/*
-Copyright: 2015 Johannes Sasongko
-License: GPL-2.0+
-
-Files: plugins/lastfmcovers/*
-Copyright: 2009 Aren Olson
-License: GPL-2.0+
-
-Files: plugins/lastfmdynamic/*
-Copyright: 2009 Aren Olsen
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/lastfmlove/*
-Copyright: 2011 Mathias Brodala
-License: GPL-2.0+
-
 Files: plugins/librivox/*
 Copyright: 2009 Arunas Radzvilavicius <arunas.rv@gmail.com>
 License: GPL-3.0+
-
-Files: plugins/lyricsmania/*
-Copyright: 2014 Rocco Aliberti
-License: GPL-2.0+
-
-Files: plugins/lyricwiki/*
-Copyright: 2008 Aren Olson
-License: GPL-2.0+
-
-Files: plugins/mainmenubutton/*
-Copyright: 2012 Mathias Brodala
-License: GPL-2.0+
-
-Files: plugins/massstorage/*
-Copyright: 2009 Aren Olson
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/minimode/*
-Copyright: 2009 Mathias Brodala
-License: GPL-2.0+
-
-Files: plugins/mono/*
-Copyright: 2013 Johannes Sasongko
-License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/moodbar/*
-Copyright: 2015 Johannes Sasongko
-License: GPL-2.0+
-
-Files: plugins/mpris2/*
-Copyright: 2015 Johannes Sasongko
-License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/multialarmclock/*
 Copyright: 2006 Adam Olsen <arolsen@gmail.com>
            2010 Brian Parma
 License: GPL-1.0+
 
-Files: plugins/musicbrainzcovers/*
-Copyright: 2012 Mathias Brodala
-License: GPL-2.0+
-
 Files: plugins/notify/*
 Copyright: 2009 Adam Olsen
            2009-2010 Abhishek Mukherjee <abhishek.mukher.g@gmail.com>
 License: GPL-1.0+
 
-Files: plugins/osd/*
-Copyright: 2012 Mathias Brodala
-License: GPL-2.0+
-
-Files: plugins/playlistanalyzer/*
-Copyright: 2014 Dustin Spicuzza
-License: GPL-2.0+ with gstreamer exception
-
 Files: plugins/playlistanalyzer/ext/*
 Copyright: 2010-2014, Michael Bostock
 License: BSD-3-Clause
-
-Files: plugins/podcasts/*
-Copyright: 2009 Adam Olsen
-License: GPL-2.0+
-
-Files: plugins/previewdevice/*
-Copyright: 2012 Dustin Spicuzza
-License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/quickbuttons/*
 Copyright: 2021 luzip665
 License: GPL-2.0+
 
-Files: plugins/screensaverpause/*
-Copyright: 2009 Johannes Sasongko
-License: GPL-2.0+ with gstreamer exception
-
 Files: plugins/shutdown/*
 Copyright: 2010 Johannes Schwartz
            2010 Mathias Brodala
 License: GPL-1.0+
-
-Files: plugins/somafm/*
-Copyright: 2010 Rocco Aliberti
-License: GPL-2.0+
-
-Files: plugins/streamripper/*
-Copyright: 2006 Adam Olsen
-License: GPL-1.0+
-
-Files: plugins/wikipedia/*
-Copyright: 2012 Mathias Brodala
-License: GPL-2.0+
-
-Files: plugins/winmmkeys/*
-Copyright: 2007 Johannes Sasongko
-License: GPL-2.0+
-
-Files: data/exaile.appdata.xml
-Copyright: 2014 Dustin Spicuzza
-License: CC0-1.0
 
 Files: debian/*
 Copyright: 2022 <luzip665@posteo.de>
