@@ -9,7 +9,7 @@ Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
-Files: plugins/audioscrobbler/*, plugins/streamripper/*
+Files: plugins/audioscrobbler/* plugins/streamripper/*
 Copyright: 2006, 2008 Adam Olsen <arolsen@gmail.com>
 License: GPL-1.0+
 
@@ -17,7 +17,7 @@ Files: plugins/podcasts/*
 Copyright: 2009 Adam Olsen
 License: GPL-2.0+
 
-Files: plugins/grouptagger/*, plugins/history/*, plugins/bpm/*, plugins/previewdevice/*, plugins/playlistanalyzer/*
+Files: plugins/grouptagger/* plugins/history/* plugins/bpm/* plugins/previewdevice/* plugins/playlistanalyzer/*
 Copyright: 2011, 2012, 2014 Dustin Spicuzza
 License: GPL-2.0+ with gstreamer exception
 
@@ -29,19 +29,19 @@ Files: data/exaile.appdata.xml
 Copyright: 2014 Dustin Spicuzza
 License: CC0-1.0
 
-Files: plugins/bookmarks/*, plugins/ipconsole/*
+Files: plugins/bookmarks/* plugins/ipconsole/*
 Copyright: 2009-2010 Brian Parma <execrable@gmail.com>
 License: GPL-2.0+
 
-Files: plugins/console/*, plugins/winmmkeys/*, plugins/karaoke/*, plugins/keybinder/*, plugins/moodbar/*
+Files: plugins/console/* plugins/winmmkeys/* plugins/karaoke/* plugins/keybinder/* plugins/moodbar/*
 Copyright: 2007, 2009, 2015 Johannes Sasongko <sasongko@gmail.com>
 License: GPL-2.0+
 
-Files: plugins/mono/*, plugins/mpris2/*, plugins/screensaverpause/*
+Files: plugins/mono/* plugins/mpris2/* plugins/screensaverpause/*
 Copyright: 2009, 2013, 2015 Johannes Sasongko
 License: GPL-2.0+ with gstreamer exception
 
-Files: plugins/cd/*, plugins/lastfmcovers/*, plugins/lastfmdynamic/*, plugins/massstorage/*
+Files: plugins/cd/* plugins/lastfmcovers/* plugins/lastfmdynamic/* plugins/massstorage/*
 Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
@@ -49,11 +49,11 @@ Files: plugins/lyricwiki/*
 Copyright: 2008 Aren Olson
 License: GPL-2.0+
 
-Files: plugins/lastfmlove/*, plugins/mainmenubutton/*, plugins/musicbrainzcovers/*, plugins/osd/*, plugins/wikipedia/*, plugins/minimode/*
+Files: plugins/lastfmlove/* plugins/mainmenubutton/* plugins/musicbrainzcovers/* plugins/osd/* plugins/wikipedia/* plugins/minimode/*
 Copyright: 2009, 2011, 2012 Mathias Brodala
 License: GPL-2.0+
 
-Files: plugins/lyricsmania/*, plugins/somafm/*
+Files: plugins/lyricsmania/* plugins/somafm/*
 Copyright: 2010, 2014 Rocco Aliberti
 License: GPL-2.0+
 
