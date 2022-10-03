@@ -7,7 +7,7 @@ Comment: non-free license
 
 Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/abrepeat/*
 Copyright: 2010 Mathias Brodala <info@noctus.net>
@@ -37,18 +37,14 @@ License: GPL-2.0+
 
 Files: plugins/bpm/*
 Copyright: 2011 Dustin Spicuzza <dustin@virtualroadside.com>
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/cd/*
 Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/console/*
 Copyright: 2007 Johannes Sasongko <sasongko@gmail.com>
-License: GPL-2.0+
-
-Files: plugins/currentsong/*
-Copyright: 2009-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+
 
 Files: plugins/daapclient/*
@@ -73,20 +69,20 @@ License: GPL-2.0+
 
 Files: plugins/equalizer/*
 Copyright: 2009 Dave Aitken
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/grouptagger/*
 Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/helloworld/*
 Copyright: 2009-2010 Adam Olsen
            2014 Dustin Spicuzza
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/history/*
 Copyright: 2011 Dustin Spicuzza
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/icecast/*
 Copyright: 2014 Ingo Brunberg
@@ -102,11 +98,11 @@ License: GPL-2.0+
 
 Files: plugins/ipconsole/ipython_view.py
 Copyright: 2007 IBM Corporation
-License: BSD-3-clause
+License: BSD-3-clause with ibm exception
 
 Files: plugins/jamendo/*
 Copyright: 2009 Erin Drummond
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/karaoke/*
 Copyright: 2009 Johannes Sasongko
@@ -122,7 +118,7 @@ License: GPL-2.0+
 
 Files: plugins/lastfmdynamic/*
 Copyright: 2009 Aren Olsen
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/lastfmlove/*
 Copyright: 2011 Mathias Brodala
@@ -146,7 +142,7 @@ License: GPL-2.0+
 
 Files: plugins/massstorage/*
 Copyright: 2009 Aren Olson
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/minimode/*
 Copyright: 2009 Mathias Brodala
@@ -154,7 +150,7 @@ License: GPL-2.0+
 
 Files: plugins/mono/*
 Copyright: 2013 Johannes Sasongko
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/moodbar/*
 Copyright: 2015 Johannes Sasongko
@@ -162,7 +158,7 @@ License: GPL-2.0+
 
 Files: plugins/mpris2/*
 Copyright: 2015 Johannes Sasongko
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/multialarmclock/*
 Copyright: 2006 Adam Olsen <arolsen@gmail.com>
@@ -184,7 +180,7 @@ License: GPL-2.0+
 
 Files: plugins/playlistanalyzer/*
 Copyright: 2014 Dustin Spicuzza
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/playlistanalyzer/ext/*
 Copyright: 2010-2014, Michael Bostock
@@ -196,19 +192,15 @@ License: GPL-2.0+
 
 Files: plugins/previewdevice/*
 Copyright: 2012 Dustin Spicuzza
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/quickbuttons/*
 Copyright: 2021 luzip665
 License: GPL-2.0+
 
-Files: plugins/replaygain/*
-Copyright: 2009 Adam Olson
-License: GPL-2.0+extended
-
 Files: plugins/screensaverpause/*
 Copyright: 2009 Johannes Sasongko
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/shutdown/*
 Copyright: 2010 Johannes Schwartz
@@ -255,7 +247,7 @@ License: GPL-2.0+
 License: GPL-3.0+
  Reference: /usr/share/common-licenses/GPL-3
 
-License: GPL-2.0+extended
+License: GPL-2.0+ with gstreamer exception
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 2 of the License, or
@@ -282,7 +274,6 @@ License: GPL-2.0+extended
  Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
 License: BSD-3-Clause
- Copyright (c) 2010-2014, Michael Bostock
  All rights reserved.
  .
  Redistribution and use in source and binary forms, with or without
@@ -308,3 +299,30 @@ License: BSD-3-Clause
  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: BDS-3-Clause with ibm exception
+ Copyright (c) 2005, 2007 IBM Corporation
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimer in the documentation
+       and/or other materials provided with the distribution.
+     * Neither the name of the IBM Corporation nor the names of its contributors
+       may be used to endorse or promote products derived from this software
+       without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
