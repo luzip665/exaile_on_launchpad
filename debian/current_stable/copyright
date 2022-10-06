@@ -9,6 +9,11 @@ Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
+Files: po/*
+Copyright: 2009 Free Software Foundation, Inc.
+           2014 Rosetta Contributors and Canonical Ltd 2014
+License: GPL-2.0+ with gstreamer exception
+
 Files: plugins/audioscrobbler/* plugins/streamripper/*
 Copyright: 2006, 2008 Adam Olsen <arolsen@gmail.com>
 License: GPL-1.0+
@@ -110,7 +115,7 @@ License: GPL-2.0+ with gstreamer exception
 
 Files: plugins/ipconsole/ipython_view.py
 Copyright: 2007 IBM Corporation
-License: BSD-3-Clause with ibm exception
+License: BSD-3-Clause-ibm
 
 Files: plugins/jamendo/*
 Copyright: 2009 Erin Drummond
@@ -131,15 +136,27 @@ Copyright: 2009 Adam Olsen
 License: GPL-1.0+
 
 Files: plugins/playlistanalyzer/ext/*
-Copyright: 2010-2014, Michael Bostock
+Copyright: 2010-2014 Michael Bostock
 License: BSD-3-Clause
+
+Files: plugins/playlistanalyzer/templates/*
+Copyright: 2014, Dustin Spicuzza <dustin@virtualroadside.com>
+License: CC-BY-4.0
+
+Files: plugins/wikipedia/__init__.py
+Copyright: 2010 Guillaume Lecomte
+License: GPL-2.0+
+
+Files: plugins/wikipedia/preferences.py
+Copyright: 2010 Guillaume Lecomte
+License: GPL-1.0+
 
 Files: plugins/quickbuttons/*
 Copyright: 2021 luzip665
 License: GPL-2.0+
 
 Files: plugins/shutdown/*
-Copyright: 2010 Johannes Schwartz
+Copyright: 2010 Johannes Schwarz
            2010 Mathias Brodala
 License: GPL-1.0+
 
@@ -216,7 +233,7 @@ License: BSD-3-Clause
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-License: BSD-3-Clause with ibm exception
+License: BSD-3-Clause-IBM
  Copyright (c) 2005, 2007 IBM Corporation
  All rights reserved.
  .
