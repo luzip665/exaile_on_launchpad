@@ -139,7 +139,7 @@ Copyright: 2009 Adam Olsen
            2009-2010 Abhishek Mukherjee <abhishek.mukher.g@gmail.com>
 License: GPL-1.0+
 
-Files: plugins/playlistanalyzer/ext/*
+Files: plugins/playlistanalyzer/ext/* debian/missing-sources/d3.js
 Copyright: 2010-2014 Michael Bostock
 License: BSD-3-Clause
 
@@ -168,15 +168,9 @@ Copyright: 2010 Johannes Schwarz
            2010 Mathias Brodala
 License: GPL-1.0+
 
-
-
 Files: debian/*
 Copyright: 2022 <luzip665@posteo.de>
 License: GPL-2.0+
-
-Files: debian/missing-sources/d3.js
-Copyright: 2010-2014, Michael Bostock
-License: BSD-3-Clause
 
 License: CC0-1.0
  Reference: /usr/share/common-licenses/CC0-1.0
