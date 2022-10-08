@@ -38,7 +38,7 @@ Files: plugins/bookmarks/* plugins/ipconsole/*
 Copyright: 2009-2010 Brian Parma <execrable@gmail.com>
 License: GPL-2.0+
 
-Files: plugins/console/* plugins/winmmkeys/* plugins/karaoke/* plugins/keybinder/* plugins/moodbar/*
+Files: plugins/console/* plugins/winmmkeys/* plugins/karaoke/* plugins/keybinder/* plugins/moodbar/* tools/generate-completion.py
 Copyright: 2007, 2009, 2015 Johannes Sasongko <sasongko@gmail.com>
 License: GPL-2.0+
 
@@ -143,6 +143,10 @@ Files: plugins/playlistanalyzer/templates/*
 Copyright: 2014, Dustin Spicuzza <dustin@virtualroadside.com>
 License: CC-BY-4.0
 
+Files: xl/externals/gi_composites.py tools/plugin_tool.py
+Copyright: 2015, Dustin Spicuzza <dustin@virtualroadside.com>
+License: LGPL-2.1+
+
 Files: plugins/wikipedia/__init__.py
 Copyright: 2010 Guillaume Lecomte
 License: GPL-2.0+
@@ -159,6 +163,8 @@ Files: plugins/shutdown/*
 Copyright: 2010 Johannes Schwarz
            2010 Mathias Brodala
 License: GPL-1.0+
+
+
 
 Files: debian/*
 Copyright: 2022 <luzip665@posteo.de>
@@ -179,6 +185,9 @@ License: GPL-2.0+
 
 License: GPL-3.0+
  Reference: /usr/share/common-licenses/GPL-3
+
+License: LGPL-2.1+
+ Reference: /usr/share/common-licenses/LGPL-2.1
 
 License: GPL-2.0+ with gstreamer exception
  This program is free software: you can redistribute it and/or modify
