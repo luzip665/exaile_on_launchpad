@@ -9,6 +9,10 @@ Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
+Files: doc/*
+Copyright: 2009-2018 Exaile Development Team
+License: GPL-2.0+
+
 Files: po/*
 Copyright: 2009 Free Software Foundation, Inc.
            2014 Rosetta Contributors and Canonical Ltd 2014
