@@ -6,7 +6,7 @@ upload() {
 
   PKG_NAME="exaile-master-daily"
 #  PKG_NAME="exaile-master-daily-${UBUNTU_RELEASE}"
-  PKG_VERSION="`date +%Y%m%d`"
+  PKG_VERSION="`date +%Y%m%d%H%M`"
   DEB_VERSION="0ubuntu1"
   ARCH="all"
 #  PPA="ppa:luzip665/ppa" # Testing
