@@ -9,6 +9,10 @@ Files: *
 Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
 
+Files: debian/*
+Copyright: 2022 <luzip665@posteo.de>
+License: GPL-2.0+
+
 Files: doc/*
 Copyright: 2009-2018 Exaile Development Team
 License: GPL-2.0+
@@ -167,10 +171,6 @@ Files: plugins/shutdown/*
 Copyright: 2010 Johannes Schwarz
            2010 Mathias Brodala
 License: GPL-1.0+
-
-Files: debian/*
-Copyright: 2022 <luzip665@posteo.de>
-License: GPL-2.0+
 
 License: CC0-1.0
  Reference: /usr/share/common-licenses/CC0-1.0
