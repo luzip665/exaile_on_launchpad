@@ -5,8 +5,12 @@
 %:
 	dh $@
 
+override_dh_auto_build:
+	make manpage
+	make completion
+	make locale
 override_dh_auto_install:
 	dh_auto_install -- PREFIX=/usr
+	find $(CURDIR) \( -name 'COPYING' -o -name 'LICENSE' \) -delete
 
-override_dh_usrlocal:
 override_dh_auto_test:
