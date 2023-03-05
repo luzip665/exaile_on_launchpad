@@ -2,8 +2,8 @@
 set -x
 
 PKG_NAME="exaile"
-EXAILE_VERSION="4.1.2"
-PKG_VERSION="4.1.2"
+EXAILE_VERSION="4.1.3-beta2"
+PKG_VERSION="4.1.3~beta2"
 DEB_VERSION="0ubuntu0"
 ARCH="all"
 #PPA="ppa:luzip665/ppa" # Testing
@@ -35,6 +35,9 @@ cd $DESTDIR
 
 sed -i "s/<#VERSION#>/$VER_STRING/g" debian/changelog
 sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/changelog
+sed -i "s/<#UBUNTU_RELEASE#>/$UBUNTU_RELEASE/g" debian/changelog
+sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/control
 
 #Set version in exaile
 sed -i "s|__version__ = \"devel\"|__version__ = \"$EXAILE_VERSION\"|" xl/version.py
