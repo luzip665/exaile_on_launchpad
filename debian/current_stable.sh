@@ -2,8 +2,8 @@
 set -x
 
 PKG_NAME="exaile"
-EXAILE_VERSION="4.1.2"
-PKG_VERSION="4.1.2+dfsg"
+EXAILE_VERSION="4.1.3-beta2"
+PKG_VERSION="4.1.3~beta2+dfsg"
 DEB_VERSION="1"
 ARCH="all"
 PPA="mentors" # official
@@ -13,7 +13,7 @@ TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
-TAR_FILE="exaile_4.1.2+dfsg.orig.tar.xz"
+TAR_FILE="exaile_${PKG_VERSION}.orig.tar.xz"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
@@ -33,13 +33,13 @@ uscan --force-download
 
 tar xf $TAR_FILE
 cd $PKG_DIR
-rm exaile-4.1.2.tar.gz
+rm exaile-${EXAILE_VERSION}.tar.gz
 
 ## This happens on launchpad build server
 dpkg-buildpackage -us -uc
 dpkg-genchanges > $CHANGESFILE
 
-lintian -IE --pedantic ../exaile-4.1.2.changes
+lintian -IE --pedantic ../exaile-${EXAILE_VERSION}.changes
 exit
 
 debsign -k exaile $CHANGESFILE
