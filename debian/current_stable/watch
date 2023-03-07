@@ -2,7 +2,9 @@ version=4
 opts=\
 searchmode=plain,\
 repacksuffix=+dfsg,\
+# replacement for download file name (e.g. from exaile-4.1.3~beta2 to exaile-4.1.3-beta2)
 dversionmangle=s/\~beta(\d+)\+dfsg*/-beta$1/,\
+# replacement for output file name (e.g. from exaile-4.1.3-beta2.tar.gz to exaile-4.1.3~beta2.tar.gz)
 oversionmangle=s/\-beta(\d+)*/~beta$1/,\
 filenamemangle=s/.+\/(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
 https://api.github.com/repos/exaile/exaile/releases \
