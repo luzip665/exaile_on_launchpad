@@ -3,21 +3,21 @@ set -x
 
 PKG_NAME="exaile"
 EXAILE_VERSION="4.1.3-beta2"
-PKG_VERSION="4.1.3~beta2+dfsg"
-DEB_VERSION="1"
+DEBIAN_VERSION="4.1.3~beta2+dfsg"
+BUILD_VERSION="1"
 ARCH="all"
 PPA="mentors" # official
 
 CURR_DIR=$PWD
 TMP_DIR="$PWD/ex_build/"
 PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
-VER_STRING="${PKG_VERSION}-${DEB_VERSION}"
+VER_STRING="${DEBIAN_VERSION}-${BUILD_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
-TAR_FILE="exaile_${PKG_VERSION}.orig.tar.xz"
+TAR_FILE="${PKG_NAME}_${DEBIAN_VERSION}.orig.tar.xz"
+CHANGESFILE="${DESTDIR}.changes"
 
 export DESTDIR=$TMP_DIR$PKG_DIR
 
-CHANGESFILE="${DESTDIR}.changes"
 
 rm -rf "${TMP_DIR}"
 mkdir -p $DESTDIR
