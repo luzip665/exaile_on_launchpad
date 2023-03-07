@@ -14,17 +14,16 @@ PKG_DIR="${PKG_NAME}-${EXAILE_VERSION}"
 VER_STRING="${DEBIAN_VERSION}-${BUILD_VERSION}"
 TIMESTAMP=`date -R` # Thu, 23 Sep 2010 21:36:01 +0200
 TAR_FILE="${PKG_NAME}_${DEBIAN_VERSION}.orig.tar.xz"
+DESTDIR=$TMP_DIR$PKG_DIR
 CHANGESFILE="${DESTDIR}.changes"
 
-export DESTDIR=$TMP_DIR$PKG_DIR
+export DESTDIR=$DESTDIR
 
 
 rm -rf "${TMP_DIR}"
-mkdir -p $DESTDIR
-
 mkdir -p $DESTDIR/debian
-cp -r current_stable/* $DESTDIR/debian
 
+cp -r current_stable/* $DESTDIR/debian
 sed -i "s/<#VERSION#>/$VER_STRING/g" $DESTDIR/debian/changelog
 sed -i "s/<#TIMESTAMP#>/$TIMESTAMP/g" $DESTDIR/debian/changelog
 
