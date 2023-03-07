@@ -1,5 +1,0 @@
-<#PKG_NAME#> (<#VERSION#>) focal; urgency=low
-
-  * PR 766: Bugfix  AutoScrollTreeView scrolls to the top when reordering or addi…
-
- -- js <exaile-users@googlegroups.com>  <#TIMESTAMP#>
