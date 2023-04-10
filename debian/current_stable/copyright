@@ -38,7 +38,7 @@ Files: plugins/developer/*
 Copyright: 2017 Dustin Spicuzza
 License: GPL-2.0+
 
-Files: data/exaile.appdata.xml
+Files: data/exaile.*
 Copyright: 2014 Dustin Spicuzza
 License: CC0-1.0
 
@@ -57,10 +57,6 @@ License: GPL-2.0+ with gstreamer exception
 Files: plugins/cd/* plugins/lastfmcovers/* plugins/lastfmdynamic/* plugins/massstorage/*
 Copyright: 2009-2010 Aren Olson <arolsen@gmail.com>
 License: GPL-2.0+ with gstreamer exception
-
-Files: plugins/lyricwiki/*
-Copyright: 2008 Aren Olson
-License: GPL-2.0+
 
 Files: plugins/lastfmlove/* plugins/mainmenubutton/* plugins/musicbrainzcovers/* plugins/osd/* plugins/wikipedia/* plugins/minimode/*
 Copyright: 2009, 2011, 2012 Mathias Brodala
