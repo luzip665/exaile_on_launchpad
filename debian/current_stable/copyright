@@ -42,6 +42,10 @@ Files: data/exaile.*
 Copyright: 2014 Dustin Spicuzza
 License: CC0-1.0
 
+Files: data/images/scalable/*
+Copyright: 2009 Jakub Steiner, Andreas Nilsson, Markus Brodala
+License: CC-BY-4.0
+
 Files: plugins/bookmarks/* plugins/ipconsole/*
 Copyright: 2009-2010 Brian Parma <execrable@gmail.com>
 License: GPL-2.0+
