@@ -38,7 +38,7 @@ rm exaile-${EXAILE_VERSION}.tar.gz
 dpkg-buildpackage -us -uc
 dpkg-genchanges > $CHANGESFILE
 
-if [ "X$1" != "Xupload"];then
+if [ "X$1" != "Xupload" ];then
   lintian -IE --pedantic ../exaile-${EXAILE_VERSION}.changes
   exit
 fi
