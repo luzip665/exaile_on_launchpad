@@ -38,9 +38,10 @@ rm exaile-${EXAILE_VERSION}.tar.gz
 dpkg-buildpackage -us -uc
 dpkg-genchanges > $CHANGESFILE
 
-lintian -IE --pedantic ../exaile-${EXAILE_VERSION}.changes
-exit
-
+if [ "$1" != "upload"];then
+  lintian -IE --pedantic ../exaile-${EXAILE_VERSION}.changes
+  exit
+fi
 debsign -k exaile $CHANGESFILE
 dput $PPA $CHANGESFILE
 
