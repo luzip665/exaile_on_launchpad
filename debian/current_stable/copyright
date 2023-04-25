@@ -286,7 +286,7 @@ Copyright: 2008-2010 Adam Olsen <arolsen@gmail.com>
            2013-2015 Dustin Spicuzza
 License: GPL-2.0+ with gstreamer exception
 
-Files: xlgui/preferences/lysrics.py
+Files: xlgui/preferences/lyrics.py
 Copyright: 2012 Jason Conti
 License: GPL-1.0+
 
