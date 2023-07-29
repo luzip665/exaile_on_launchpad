@@ -57,6 +57,5 @@ cd -
 upload "bionic"
 upload "focal"
 upload "jammy"
-upload "kinetic"
 upload "lunar"
 upload "mantic"
