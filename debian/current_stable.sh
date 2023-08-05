@@ -2,8 +2,8 @@
 set -x
 
 PKG_NAME="exaile"
-EXAILE_VERSION="4.1.3-beta3"
-DEBIAN_VERSION="4.1.3~beta3+dfsg"
+EXAILE_VERSION="4.1.3"
+DEBIAN_VERSION="4.1.3+dfsg"
 BUILD_VERSION="1"
 ARCH="all"
 PPA="mentors" # official
