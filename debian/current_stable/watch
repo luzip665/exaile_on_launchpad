@@ -4,7 +4,6 @@ searchmode=plain,\
 repacksuffix=+dfsg,\
 dversionmangle=s/\~beta(\d+)\+dfsg*/-beta$1/,\
 oversionmangle=s/\-beta(\d+)*/~beta$1/,\
-uversionmangle=s/\-beta(\d+)*/~beta$1/,\
-filenamemangle=s/.+\/(\d\S+)\.tar\.gz/exaile-$1\.tar\.gz/ \
+uversionmangle=s/\-beta(\d+)*/~beta$1/ \
 https://api.github.com/repos/exaile/exaile/releases \
 https://github.com/exaile/exaile/releases/download/(?:\d\.\d\.\d(?:-beta\d*?)??)\/exaile-(\d)\.(\d)\.(\d(?:-beta\d*?)?)\.tar\.gz

@@ -119,10 +119,6 @@ Files: plugins/ipconsole/ipython_view.py
 Copyright: 2007 IBM Corporation
 License: BSD-3-Clause-ibm
 
-Files: plugins/jamendo/*
-Copyright: 2009 Erin Drummond
-License: GPL-2.0+ with gstreamer exception
-
 Files: plugins/karaoke/*
 Copyright: 2007, 2009, 2015 Johannes Sasongko <sasongko@gmail.com>
 License: GPL-2.0+
