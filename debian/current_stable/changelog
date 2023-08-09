@@ -1,5 +1,8 @@
 exaile (<#VERSION#>) unstable; urgency=low
 
-  * Reintroduce package (Closes: #1012202)
+  * Adding support for tagging aac files with id3 tags
+  * Change flac/ogg metadata handling for bpm and comment
+  * Adding a message window to inform about changes regarding the tagging
+  * Bugfix: Adding of unsupported file types will be prevented
 
  -- luzip665 <luzip665@posteo.de>  <#TIMESTAMP#>
