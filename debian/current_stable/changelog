@@ -1,6 +1,7 @@
 exaile (4.1.3+dfsg-2) unstable; urgency=low
 
-  * Adding explicit dependencies for gir1.2-girepository-2.0 and other typelibs (Closes: #1059625)
+  * Adding explicit dependencies for gir1.2-girepository-2.0
+    and other typelibs (Closes: #1059625)
 
  -- luzip665 <luzip665@posteo.de>  Sat, 30 DEC 2023 12:32:16 +0200
 
