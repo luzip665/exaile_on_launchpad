@@ -1,0 +1,32 @@
+ARG BASE_IMAGE='a'
+
+FROM $BASE_IMAGE
+
+
+ARG PKG_NAME
+ENV PKG_NAME=$PKG_NAME
+
+ARG EXAILE_VERSION
+ENV EXAILE_VERSION=$EXAILE_VERSION
+
+ARG DEBIAN_VERSION
+ENV DEBIAN_VERSION=$DEBIAN_VERSION
+
+ARG BUILD_VERSION
+ENV BUILD_VERSION=$BUILD_VERSION
+
+COPY _install.sh /tmp/install.sh
+RUN chmod +x /tmp/install.sh
+RUN /tmp/install.sh
+
+# Copy everything
+# COPY _init.sh /tmp/init.sh
+
+# Init
+# RUN chmod +x /tmp/init.sh
+# RUN /tmp/init.sh
+
+#STARTUP
+COPY _run.sh /bin/run.sh
+RUN chmod +x /bin/run.sh
+CMD /bin/run.sh
