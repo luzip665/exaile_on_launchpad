@@ -2,8 +2,8 @@
 set -x
 
 PKG_NAME="exaile"
-EXAILE_VERSION="4.1.3"
-PKG_VERSION="4.1.3"
+EXAILE_VERSION="4.1.4-beta1"
+PKG_VERSION="4.1.4~beta1"
 DEB_VERSION="0ubuntu0"
 ARCH="all"
 #PPA="ppa:luzip665/ppa" # Testing
