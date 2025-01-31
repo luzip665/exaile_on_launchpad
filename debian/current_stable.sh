@@ -2,9 +2,9 @@
 #set -x
 
 export PKG_NAME="exaile"
-export EXAILE_VERSION="4.1.3"
-export DEBIAN_VERSION="4.1.3+dfsg"
-export BUILD_VERSION="4"
+export EXAILE_VERSION="4.1.4-beta1"
+export DEBIAN_VERSION="4.1.4~beta1+dfsg"
+export BUILD_VERSION="1"
 
 PPA="mentors" # official
 
@@ -18,8 +18,9 @@ export PATH_TO_EXAILE=$(dirname "$CURR_DIR")
 export DESTDIR=$DESTDIR
 
 
+
 cd docker
-bash build.sh
+bash build.sh  | tee ../build.log
 
 cd ..
 

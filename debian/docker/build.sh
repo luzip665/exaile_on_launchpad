@@ -5,6 +5,7 @@ CONTAINERNAME="exaile-debian"
 BASE_IMAGE='debian:unstable-slim'
 TARGET_IMAGE=exaile_base
 
+NEW=$1
 LIST=`docker ps -a -f "name=$CONTAINERNAME" | wc -l`
 EXISTS=`test $LIST -eq 2 && echo true`
 
@@ -18,5 +19,5 @@ docker buildx build \
   --build-arg DEBIAN_VERSION=$DEBIAN_VERSION \
   --build-arg BUILD_VERSION=$BUILD_VERSION \
   -t $TARGET_IMAGE .
-docker run --name $CONTAINERNAME --mount type=bind,src="$PATH_TO_EXAILE",dst=/tmp/exaile "$TARGET_IMAGE"
+docker run --name $CONTAINERNAME --privileged --mount type=bind,src="$PATH_TO_EXAILE",dst=/tmp/exaile "$TARGET_IMAGE"
 
