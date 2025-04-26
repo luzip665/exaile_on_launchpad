@@ -36,8 +36,8 @@ upload() {
   sed -i "s/<#PKG_NAME#>/$PKG_NAME/g" debian/control
 
   ## This happens on launchpad build server
-  #dpkg-buildpackage
-  #exit 0;
+#  dpkg-buildpackage
+#  exit 0;
   ##
 
   dpkg-source -b .
